@@ -15,7 +15,7 @@ function onValueIncrement() {
 };
 
 function onValueDecrement() {
-    if (result === 0) {
+    if (counterValue === 0) {
         return;
     }
     counterValue -= 1;
