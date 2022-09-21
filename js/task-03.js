@@ -20,4 +20,3 @@ const image = images.map(image => {
 }).join('');
 
 listGallery.insertAdjacentHTML("afterbegin", image);
-console.log(listGallery);

@@ -12,16 +12,17 @@ refs.btnDecrement.addEventListener('click', onValueDecrement);
 function onValueIncrement() {
     counterValue += 1;
     resultValue(counterValue);
-    console.log(counterValue);
-}
+};
 
 function onValueDecrement() {
+    if (result === 0) {
+        return;
+    }
     counterValue -= 1;
     resultValue(counterValue);
-    console.log(counterValue);
-}
+};
 
 function resultValue(counterValue) {
     refs.value.textContent = counterValue;
-}
+};
 
